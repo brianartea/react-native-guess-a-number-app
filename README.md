@@ -10,11 +10,13 @@ Assuming that you have Node 12 LTS or greater installed, you can use npm to inst
 
 npm install -g expo-cli
 
-To make sure your custom fonts you install into your project folder work: assets/fonts in this case:
-expo install expo-font
-
 Get project started and to load the starting node-modules and other dependancies:
+
 expo init ProjectName
+
+To make sure your custom fonts you install into your project folder work: assets/fonts in this case:
+
+expo install expo-font
 
 //Open project folder in VS Code and use the built in Terminal//
 
