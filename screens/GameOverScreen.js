@@ -9,7 +9,9 @@ const GameOver = props => {
     <View style={styles.screen}>
       <TitleText>Game Over!</TitleText>
       <View style={styles.imageContainer}>
-        <Image source={require('../assets/success.png')}
+        <Image
+          //source={{uri: 'https://rourimage/images/image.jpg'}}
+          source={require('../assets/success.png')}
           style={styles.image}
           resizeMode="cover" />
       </View>
