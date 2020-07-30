@@ -10,7 +10,7 @@ const Header = props => {
     <View style={styles.header}>
       <TitleText style={styles.headerTitle}>{props.title}</TitleText>
     </View>
-  )
+  );
 };
 
 const styles = StyleSheet.create({
@@ -23,7 +23,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   headerTitle: {
-    color: 'white'
+    color: 'white',
+    fontSize: 18,
+    fontFamily: 'open-sans-bold'
   }
 });
 
