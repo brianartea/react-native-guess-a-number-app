@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, Button, Image } from 'react-native';
 
 import BodyText from '../components/BodyText';
 import TitleText from '../components/TitleText';
+import MainButton from '../components/MainButton';
 import Colors from '../constants/Colors';
 
 const GameOver = props => {
@@ -19,7 +20,10 @@ const GameOver = props => {
       <View style={styles.resultContainer}>
         <BodyText style={styles.resultText}>Number of rounds: <Text style={styles.highlight}>{props.roundsNumber}</Text></BodyText>
         <BodyText style={styles.resultText}>Your number was: <Text style={styles.highlight}>{props.userNumber}</Text></BodyText>
-        <View style={styles.margin}><Button title="START NEW GAME" onPress={props.onRestart} /></View>
+        <View style={styles.margin}><MainButton onPress={props.onRestart}>
+          NEW GAME
+        </MainButton>
+        </View>
       </View>
     </View>
   );
@@ -48,7 +52,9 @@ const styles = StyleSheet.create({
     marginVertical: 15
   },
   margin: {
-    marginTop: 20
+    marginTop: 20,
+    alignContent: 'center',
+    alignItems: 'center'
   },
   resultText: {
     textAlign: 'center',

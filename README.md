@@ -31,3 +31,25 @@ expo start
 //The above will start a development server for you and open up default browser with camera code to open expo on iphone.//
 
 //Also download Android Studio for ios and android simulators.//
+
+Code example
+---------------------------
+//, { useState }
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+//import TitleText from './TitleText';
+//import Colors from '../constants/Colors';
+
+const MainButton = props => {
+  return (
+    
+  );
+};
+
+const styles = StyleSheet.create({
+  
+});
+
+export default MainButton;
+---------------------------
