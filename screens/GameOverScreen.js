@@ -1,5 +1,13 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, Image } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Button,
+  Image,
+  Dimensions,
+  ScrollView
+} from 'react-native';
 
 import BodyText from '../components/BodyText';
 import TitleText from '../components/TitleText';
@@ -8,24 +16,26 @@ import Colors from '../constants/Colors';
 
 const GameOver = props => {
   return (
-    <View style={styles.screen}>
-      <TitleText>Game Over!</TitleText>
-      <View style={styles.imageContainer}>
-        <Image
-          //source={{uri: 'https://rourimage/images/image.jpg'}}
-          source={require('../assets/success.png')}
-          style={styles.image}
-          resizeMode="cover" />
-      </View>
-      <View style={styles.resultContainer}>
-        <BodyText style={styles.resultText}>Number of rounds: <Text style={styles.highlight}>{props.roundsNumber}</Text></BodyText>
-        <BodyText style={styles.resultText}>Your number was: <Text style={styles.highlight}>{props.userNumber}</Text></BodyText>
-        <View style={styles.margin}><MainButton onPress={props.onRestart}>
-          NEW GAME
-        </MainButton>
+    <ScrollView>
+      <View style={styles.screen}>
+        <TitleText>Game Over!</TitleText>
+        <View style={styles.imageContainer}>
+          <Image
+            //source={{uri: 'https://rourimage/images/image.jpg'}}
+            source={require('../assets/success.png')}
+            style={styles.image}
+            resizeMode="cover" />
+        </View>
+        <View style={styles.resultContainer}>
+          <BodyText style={styles.resultText}>Number of rounds: <Text style={styles.highlight}>{props.roundsNumber}</Text></BodyText>
+          <BodyText style={styles.resultText}>Your number was: <Text style={styles.highlight}>{props.userNumber}</Text></BodyText>
+          <View style={styles.margin}><MainButton onPress={props.onRestart}>
+            NEW GAME
+          </MainButton>
+          </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -36,20 +46,21 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   imageContainer: {
-    width: 300,
-    height: 300,
-    borderRadius: 150,
+    width: Dimensions.get('window').width * 0.7,
+    height: Dimensions.get('window').width * 0.7,
+    borderRadius: Dimensions.get('window').width * 0.7 / 2,
     borderWidth: 3,
     borderColor: 'black',
     overflow: 'hidden',
-    marginVertical: 30
+    marginVertical: Dimensions.get('window').height / 30
   },
   image: {
     width: '100%',
     height: '100%'
   },
   resultContainer: {
-    marginVertical: 15
+    marginHorizontal: 30,
+    marginVertical: Dimensions.get('window').height / 60
   },
   margin: {
     marginTop: 20,
@@ -58,7 +69,7 @@ const styles = StyleSheet.create({
   },
   resultText: {
     textAlign: 'center',
-    fontSize: 20
+    fontSize: Dimensions.get('window').height < 400 ? 16 : 20
   },
   highlight: {
     color: Colors.primary,
