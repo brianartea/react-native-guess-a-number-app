@@ -36,12 +36,14 @@ expo start
 Boilerplate example in most pages/components
 
 import React from 'react';
+
 import { View, Text, StyleSheet } from 'react-native';
 
 const MainButton = props => {
   return (
     
   );
+  
 };
 
 const styles = StyleSheet.create({
