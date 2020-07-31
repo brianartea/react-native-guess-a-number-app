@@ -83,7 +83,7 @@ const GameScreen = props => {
       </View>
     </View>
   );
-}
+};
 
 
 const styles = StyleSheet.create({
