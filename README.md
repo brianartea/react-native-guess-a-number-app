@@ -1,3 +1,5 @@
+This is a React Native simple game app. Branch 27 has a finished version in zip format.
+
 Download Node if you have not:
 https://nodejs.org/en/download/
 
