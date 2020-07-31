@@ -34,12 +34,9 @@ expo start
 //Also download Android Studio for ios and android simulators.//
 
 Boilerplate example in most pages/components
-##########################
+
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
-//import TitleText from './TitleText';
-//import Colors from '../constants/Colors';
 
 const MainButton = props => {
   return (
@@ -52,4 +49,3 @@ const styles = StyleSheet.create({
 });
 
 export default MainButton;
-##########################
