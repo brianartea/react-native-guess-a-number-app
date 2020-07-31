@@ -1,10 +1,11 @@
 Download Node if you have not:
 https://nodejs.org/en/download/
 
-See if you have Node already or installed correctly type in Terminal:
-node -v
+All in the Terminal/Cmd-line or Git Bash
 
-All in the Terminal/cmd-line or Git Bash
+See if you have Node already or installed correctly. Type in Terminal:
+
+node -v
 
 Assuming that you have Node 12 LTS or greater installed, you can use npm to install the Expo CLI command line utility exactly like below:
 
@@ -32,9 +33,8 @@ expo start
 
 //Also download Android Studio for ios and android simulators.//
 
-Code example
----------------------------
-//, { useState }
+Boilerplate example in most pages/components
+##########################
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
@@ -52,4 +52,4 @@ const styles = StyleSheet.create({
 });
 
 export default MainButton;
----------------------------
+##########################
