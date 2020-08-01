@@ -5,9 +5,9 @@ This is a React Native simple game app I learned from an online course. Branch 2
 Download Node if you have not:
 https://nodejs.org/en/download/
 
-## Type or copy and paste the commands below in the Terminal/Cmd-line or Git Bash
+## Type or copy and paste the commands below in the Terminal/Cmd-Line or Git Bash
 
-See if you have Node already or installed correctly. Type in Terminal:
+See if you have Node already or installed correctly. Type in the Terminal:
 
 ```bash
 node -v
