@@ -5,6 +5,8 @@ This is a React Native simple game app I learned from an online course. Branch 2
 Download Node if you have not:
 https://nodejs.org/en/download/
 
+<a href="https://nodejs.org/en/download/" target="_blank">https://nodejs.org/en/download/</a>
+
 ## Type or copy and paste the commands below in the Terminal/Cmd-Line or Git Bash
 
 See if you have Node already or installed correctly. Type in the Terminal:
@@ -56,6 +58,8 @@ The above will start a development server for you and open up default browser wi
 
 Also download Android Studio for ios and android simulators.
 https://developer.android.com/studio
+
+<a href="https://developer.android.com/studio" target="_blank">https://developer.android.com/studio</a>
 
 ## Boilerplate for most pages/components below.
 
