@@ -25,13 +25,13 @@ Get project started and to load the starting node-modules and other dependancies
 expo init ProjectName
 ```
 
-To make sure your custom fonts you install into your project folder work: assets/fonts in this case:
+ I put my actual fonts into: assets/fonts/
 
 ```bash
 expo install expo-font
 ```
 
-//Open project folder in VS Code and use the built in Terminal//
+I opened the project folder in VS Code and used the built in Terminal. The command to open VS Code's Terminal directly below, I have mine set up in bash.
 
 ```bash
 Ctrl + `
@@ -47,11 +47,12 @@ npm start
 expo start
 ```
 
-//The above will start a development server for you and open up default browser with camera code to open expo on iphone.//
+The above will start a development server for you and open up default browser with camera code to open expo on iphone.
 
-//Also download Android Studio for ios and android simulators.//
+Also download Android Studio for ios and android simulators.
+https://developer.android.com/studio
 
-//Boilerplate example in most pages/components below.
+Boilerplate example in most pages/components below.
 
 ```bash
 import React from 'react';
