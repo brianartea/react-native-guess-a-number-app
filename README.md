@@ -5,7 +5,7 @@ This is a React Native simple game app I learned from an online course. Branch 2
 Download Node if you have not:
 https://nodejs.org/en/download/
 
-Type or copy and paste the commands below in the Terminal/Cmd-line or Git Bash
+## Type or copy and paste the commands below in the Terminal/Cmd-line or Git Bash
 
 See if you have Node already or installed correctly. Type in Terminal:
 
@@ -24,14 +24,19 @@ Get project started and to load the starting node-modules and other dependancies
 ```bash
 expo init ProjectName
 ```
+```bash
+cd ProjectName
+```
 
- I put my actual fonts into: assets/fonts/
+ Install for font.ttf files you want to include. I used two font.ttf files in ../assets/fonts/
 
 ```bash
 expo install expo-font
 ```
 
 I opened the project folder in VS Code and used the built in Terminal. The command to open VS Code's Terminal directly below, I have mine set up in bash.
+
+The commands below will start a development server for you and open up your default browser with camera code to open expo on iphone, download Expo App from the App Store, then your app opens and you work on it live.
 
 ```bash
 Ctrl + `
@@ -41,7 +46,7 @@ Ctrl + `
 npm start 
 ```
 
-//you can also use: 
+You can also use below and get the same result.
 
 ```bash
 expo start
@@ -52,7 +57,7 @@ The above will start a development server for you and open up default browser wi
 Also download Android Studio for ios and android simulators.
 https://developer.android.com/studio
 
-Boilerplate example in most pages/components below.
+## Boilerplate for most pages/components below.
 
 ```bash
 import React from 'react';
